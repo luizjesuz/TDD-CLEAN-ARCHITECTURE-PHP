@@ -1,0 +1,22 @@
+{
+  "name": "tdd-clean-architecture-php",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Luiz Pires <luiz@kw13.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8"
+  },
+  "lint-staged": {
+    "*.php": [
+      "php ./vendor/bin/php-cs-fixer fix --config .php_cs",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
