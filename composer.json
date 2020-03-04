@@ -1,0 +1,11 @@
+{
+    "name": "kandrus/tdd-clean-architecture-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luiz Pires",
+            "email": "luiz@kw13.com.br"
+        }
+    ],
+    "require": {}
+}
