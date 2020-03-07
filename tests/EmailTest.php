@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-namespace KW13;
+namespace Tests;
 
 use InvalidArgumentException;
+use KW13\Email;
 use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase

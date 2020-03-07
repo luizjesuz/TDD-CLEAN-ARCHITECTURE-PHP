@@ -1,5 +1,5 @@
 {
-    "name": "kandrus/tdd-clean-architecture-php",
+    "name": "kw13/TDD-CLEAN-ARCHITECTURE-PHP",
     "license": "MIT",
     "authors": [
         {
@@ -7,11 +7,24 @@
             "email": "luiz@kw13.com.br"
         }
     ],
+    "support": {
+        "issues": "https://github.com/kw13code/TDD-CLEAN-ARCHITECTURE-PHP/issues",
+        "source": "https://github.com/kw13code/TDD-CLEAN-ARCHITECTURE-PHP",
+        "rss": "https://github.com/kw13code/TDD-CLEAN-ARCHITECTURE-PHP/releases.atom"
+    },
+    "keywords": [
+        "skeleton",
+        "clean architecture",
+        "TDD"
+    ],
+    "config": {
+        "sort-packages": true
+    },
     "require": {},
     "scripts": {
         "test": "./vendor/bin/phpunit",
         "test:staged": "./vendor/bin/phpunit && php vendor/bin/phpstan analyse src tests --level 7",
-        "test:ci": "./vendor/bin/phpunit --coverage-html coverage-report "
+        "test:ci": "./vendor/bin/phpunit --coverage-html tests/coverage-report "
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
@@ -23,9 +36,13 @@
     "autoload": {
         "psr-4": {
             "KW13\\": [
-                "src/",
-                "tests"
+                "src/"
             ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     }
 }

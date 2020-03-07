@@ -23,3 +23,5 @@ Homestead.json
 .phpunit.result.cache
 coverage-report
 .php_cs.cache
+Email.php
+EmailTest.php

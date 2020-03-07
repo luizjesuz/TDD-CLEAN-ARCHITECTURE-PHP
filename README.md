@@ -1,4 +1,4 @@
-# TDD-CLEAN-ARCHITECTURE-PHP
+# KW13 - GERENCIADOR DE PORTFÓLIOS
 
 ## Tecnologias utilizadas
 
@@ -9,4 +9,13 @@
 - [x] phpstan - Ferramenta para analise estática do código antes de cada commit
 - [x] git-commit-msg-linter - Verifica se as mensagens de commit estão dentro do padrão <https://www.conventionalcommits.org/en/v1.0.0/>  
 
-### O commit só será realizado se o código passar em todos os testes acima. Todos os testes são realizados automaticamente toda vez que um comando "git commit -m ''" for executado. Caso qualquer teste falhe o commit é cancelado
+### Arquitetura
+
+- [ ] clean **architecture**
+- [ ] Principios SOLID
+
+### Workflow
+
+- [ ] git flow
+
+### Frameworks e bibliotecas
