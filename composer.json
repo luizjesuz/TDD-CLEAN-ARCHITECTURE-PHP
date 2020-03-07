@@ -11,7 +11,7 @@
     "scripts": {
         "test": "./vendor/bin/phpunit --colors --testdox",
         "test:staged": "./vendor/bin/phpunit",
-        "test:ci": "./vendor/bin/phpunit --coverage-html build/coverage-report "
+        "test:ci": "./vendor/bin/phpunit --coverage-html coverage-report "
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
