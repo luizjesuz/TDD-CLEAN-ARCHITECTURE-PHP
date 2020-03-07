@@ -11,14 +11,14 @@
  processIsolation="false"
  stopOnFailure="false"
  verbose="false">
- <testsuites>
- <testsuite name="GetStarted Tests">
- <directory>./tests/</directory>
- </testsuite>
- </testsuites>
- <filter>
-		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">./src</directory>
-		</whitelist>
-	</filter>
+  <testsuites>
+    <testsuite name="GetStarted Tests">
+      <directory>./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">./src</directory>
+    </whitelist>
+  </filter>
 </phpunit>
