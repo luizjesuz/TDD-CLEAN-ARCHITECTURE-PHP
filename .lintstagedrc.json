@@ -1,6 +1,6 @@
 {
   "*.php": [
-    "php ./vendor/bin/php-cs-fixer fix --config .php_cs",
-    "composer test:staged"
+    "composer test:staged",
+    "php ./vendor/bin/php-cs-fixer fix --config .php_cs"
   ]
 }
