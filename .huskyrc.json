@@ -1,9 +1,6 @@
 {
   "hooks": {
     "pre-commit": "lint-staged && php vendor/bin/phpstan analyse src --level=7",
-    "pre-push": [
-      "composer test:ci",
-      "vendor/bin/phpstan analyse src --level=7"
-    ]
+    "pre-push": "composer test:ci && php vendor/bin/phpstan analyse src --level=7"
   }
 }
