@@ -10,7 +10,8 @@
  convertWarningsToExceptions="true"
  processIsolation="false"
  stopOnFailure="false"
- verbose="false">
+ verbose="true"
+ testdox="true">
   <testsuites>
     <testsuite name="GetStarted Tests">
       <directory>./tests/</directory>
