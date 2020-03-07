@@ -5,6 +5,7 @@
   "author": "Luiz Pires <luiz@kw13.com.br>",
   "license": "MIT",
   "devDependencies": {
+    "git-commit-msg-linter": "^2.4.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8"
   }
