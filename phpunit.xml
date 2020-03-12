@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
- backupGlobals="false"
- backupStaticAttributes="false"
- bootstrap="./vendor/autoload.php"
- cacheTokens="true"
- colors="true"
- convertErrorsToExceptions="true"
- convertNoticesToExceptions="true"
- convertWarningsToExceptions="true"
- processIsolation="false"
- stopOnFailure="false"
- verbose="true"
- testdox="true">
-  <testsuites>
-    <testsuite name="GetStarted Tests">
-      <directory>./tests/</directory>
-    </testsuite>
-  </testsuites>
-  <filter>
-    <whitelist processUncoveredFilesFromWhitelist="true">
-      <directory suffix=".php">./src</directory>
-    </whitelist>
-  </filter>
-  <logging>
-    <log type="coverage-html" target="tests/coverage-report/_reports" lowUpperBound="35" highLowerBound="70"/>
-    <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
-    <log type="testdox-text" target="tests/coverage-report/_reports/testdox.txt"/>
-  </logging>
+        backupGlobals="false"
+        backupStaticAttributes="false"
+        bootstrap="./vendor/autoload.php"
+        cacheTokens="true"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        stopOnFailure="false"
+        verbose="false"
+        testdox="true">
+    <testsuites>
+        <testsuite name="GetStarted Tests">
+            <directory>src</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <!-- <log type="coverage-html" target="tests/coverage-report/_reports" lowUpperBound="35" highLowerBound="70"/> -->
+        <!-- <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/> -->
+        <log type="testdox-text" target="coverage-report/_reports/testdox.txt"/>
+    </logging>
 </phpunit>

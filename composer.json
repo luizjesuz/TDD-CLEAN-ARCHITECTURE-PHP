@@ -1,5 +1,5 @@
 {
-    "name": "kw13/TDD-CLEAN-ARCHITECTURE-PHP",
+    "name": "kw13/kandrus-portfolio",
     "license": "MIT",
     "authors": [
         {
@@ -7,42 +7,40 @@
             "email": "luiz@kw13.com.br"
         }
     ],
-    "support": {
-        "issues": "https://github.com/kw13code/TDD-CLEAN-ARCHITECTURE-PHP/issues",
-        "source": "https://github.com/kw13code/TDD-CLEAN-ARCHITECTURE-PHP",
-        "rss": "https://github.com/kw13code/TDD-CLEAN-ARCHITECTURE-PHP/releases.atom"
-    },
     "keywords": [
-        "skeleton",
-        "clean architecture",
-        "TDD"
+        "portfolio",
+        "kandrus.me",
+        "kandrus.dev",
+        "kw13.com.br"
     ],
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "process-timeout": 0
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit-watcher watch",
+        "test:staged": "./vendor/bin/phpunit && php vendor/bin/phpstan analyse src --level 7",
+        "test:ci": "./vendor/bin/phpunit --coverage-html coverage-report && php vendor/bin/phpstan analyse src --level 7 && ./vendor/bin/phpinsights"
     },
     "require": {},
-    "scripts": {
-        "test": "./vendor/bin/phpunit",
-        "test:staged": "./vendor/bin/phpunit && php vendor/bin/phpstan analyse src tests --level 7",
-        "test:ci": "./vendor/bin/phpunit --coverage-html tests/coverage-report "
-    },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "phpunit/phpunit": "^9.0",
-        "phpunit/php-code-coverage": "^8.0",
+        "nunomaduro/phpinsights": "^1.14",
+        "phpspec/prophecy": "~1.0",
         "phpstan/phpstan": "^0.12.14",
-        "phpstan/phpstan-phpunit": "^0.12.6"
+        "phpstan/phpstan-phpunit": "^0.12.6",
+        "phpunit/php-code-coverage": "^8.0",
+        "phpunit/phpunit": "^9.0",
+        "spatie/phpunit-watcher": "^1.22"
     },
     "autoload": {
         "psr-4": {
             "KW13\\": [
                 "src/"
+            ],
+            "ProtocolsPresentation\\": [
+                "src/presentation/protocols/"
             ]
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
         }
     }
 }
