@@ -46,10 +46,10 @@ class SignUpController implements Controller
                 'statusCode' => 200,
                 'boody' => 'Sucesso'
             ];
-        } catch (Exception $e) {
+        } catch (Exception $error) {
             return [
-                'statusCode' => $e->getCode(),
-                'body' => $e->getMessage()
+                'statusCode' => $error->getCode(),
+                'body' => $error->getMessage()
             ];
         }
     }
